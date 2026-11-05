@@ -1,0 +1,121 @@
+@page "/usuarios"
+
+<div class="min-h-screen bg-[#FFF3F5] p-5 md:p-10">
+
+    <!-- ENCABEZADO -->
+    <div class="bg-[#D991A5] rounded-[30px] p-8 mb-10 text-center shadow-lg">
+
+        <p class="text-white tracking-[0.3em] text-sm font-semibold mb-3">
+            ♡ NUESTRA COMUNIDAD ♡
+        </p>
+
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-3">
+            Lista de Usuarios
+        </h1>
+
+        <p class="text-[#FFF4F6]">
+            Conoce a las personas que forman parte de nosotros.
+        </p>
+
+    </div>
+
+    <!-- LISTA DE USUARIOS -->
+    <div class="max-w-5xl mx-auto bg-white rounded-[25px] shadow-md border border-[#F5DCE3] p-5 md:p-8">
+
+        <h2 class="text-2xl font-bold text-[#A85F76] mb-6">
+            ♡ Usuarios registrados
+        </h2>
+
+        <div class="flex flex-col gap-4">
+
+            @foreach (Usuario usuario in lstUsuarios)
+            {
+                <div class="flex items-center gap-5 bg-[#FFF3F5] rounded-2xl p-4 border border-[#F5DCE3] hover:shadow-md transition-all">
+
+                    <!-- FOTO -->
+                    <img src="@usuario.Imagen"
+                         alt="@usuario.Nombre"
+                         class="w-16 h-16 rounded-full object-cover border-4 border-white shadow-sm" />
+
+                    <!-- NOMBRE -->
+                    <div>
+                        <h3 class="text-lg font-bold text-[#A85F76]">
+                            @usuario.Nombre @usuario.Apellido
+                        </h3>
+
+                        <p class="text-sm text-[#C18D9C]">
+                            ♡ Usuario registrado
+                        </p>
+                    </div>
+
+                </div>
+            }
+
+        </div>
+
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <div class="text-center mt-12">
+        <p class="text-[#A85F76] font-semibold tracking-widest text-sm">
+            GRACIAS POR SER PARTE DE NOSOTROS ♡
+        </p>
+    </div>
+
+</div>
+
+@code {
+
+    private List<Usuario> lstUsuarios = new()
+    {
+        new Usuario(
+            "https://randomuser.me/api/portraits/women/44.jpg",
+            "María",
+            "Fernández"
+        ),
+
+        new Usuario(
+            "https://randomuser.me/api/portraits/men/32.jpg",
+            "Carlos",
+            "Rodríguez"
+        ),
+
+        new Usuario(
+            "https://randomuser.me/api/portraits/women/68.jpg",
+            "Sofía",
+            "Martínez"
+        ),
+
+        new Usuario(
+            "https://randomuser.me/api/portraits/men/75.jpg",
+            "Andrés",
+            "García"
+        ),
+
+        new Usuario(
+            "https://randomuser.me/api/portraits/women/12.jpg",
+            "Valentina",
+            "López"
+        )
+    };
+
+    public class Usuario
+    {
+        public string? Imagen { get; set; }
+        public string? Nombre { get; set; }
+        public string? Apellido { get; set; }
+        public string? Email { get; set; }
+        public string? Password { get; set; }
+        public string? Fecha_Nac { get; set; }
+        public string? Edad { get; set; }
+        public string? Estatura { get; set; }
+
+        public Usuario(string imagen, string nombre, string apellido)
+        {
+            Imagen = imagen;
+            Nombre = nombre;
+            Apellido = apellido;
+        }
+    }
+
+}
