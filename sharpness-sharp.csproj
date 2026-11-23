@@ -26,7 +26,7 @@
 
   <Target Name="TailwindCss" BeforeTargets="AssignTargetPaths" Condition="'$(DesignTimeBuild)' != 'true' And '$(BuildingProject)' == 'true'">
     <Exec Command="pnpm install" Condition="!Exists('node_modules')" />
-    <Exec Command="pnpm exec tailwindcss -i ./Styles/tailwind.css -o ./wwwroot/app.css --minify" />
+    <Exec Command="pnpm exec tailwindcss -i ./Styles/tailwind.css -o ./wwwroot/app.css --minify"/>
     <Exec Command="bash ./Styles/watch.sh" Condition="'$(OS)' != 'Windows_NT'" />
   </Target>
 

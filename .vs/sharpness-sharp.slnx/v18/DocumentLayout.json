@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USUARIO\\curso-blazor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{19A533B7-E569-3ABB-3372-C8AE4920B594}|sharpness-sharp.csproj|c:\\users\\usuario\\curso-blazor\\sharpness-sharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{19A533B7-E569-3ABB-3372-C8AE4920B594}|sharpness-sharp.csproj|solutionrelative:sharpness-sharp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19A533B7-E569-3ABB-3372-C8AE4920B594}|sharpness-sharp.csproj|c:\\users\\usuario\\curso-blazor\\components\\pages\\usuarios.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{19A533B7-E569-3ABB-3372-C8AE4920B594}|sharpness-sharp.csproj|solutionrelative:components\\pages\\usuarios.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "sharpness-sharp.csproj",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\curso-blazor\\sharpness-sharp.csproj",
+              "RelativeDocumentMoniker": "sharpness-sharp.csproj",
+              "ToolTip": "C:\\Users\\USUARIO\\curso-blazor\\sharpness-sharp.csproj",
+              "RelativeToolTip": "sharpness-sharp.csproj",
+              "ViewState": "AgIAABIAAAAAAAAAAAAuwBoAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-11-10T21:39:23.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Usuarios.razor",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\curso-blazor\\Components\\Pages\\Usuarios.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Usuarios.razor",
+              "ToolTip": "C:\\Users\\USUARIO\\curso-blazor\\Components\\Pages\\Usuarios.razor",
+              "RelativeToolTip": "Components\\Pages\\Usuarios.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-10T21:35:00.551Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

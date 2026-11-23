@@ -1,0 +1,17 @@
+@page "/ventas"
+@using Microsoft.EntityFrameworkCore
+@using sharpness_sharp.Data
+@using sharpness_sharp.Data.Models
+
+@foreach(Ventas venta in lstVentas)
+{
+    <div>
+        <p>Id de venta: @venta.Id</p>
+        <p>Email del Usuario: @venta.Cliente.UserName</p>
+        <p>Nombre del cafe: @venta.Cafe.NombreCafe</p>
+        <p>Precio del cafe: @venta.Cafe.PrecioCafe</p>
+        <p>Unidades Compradas: @venta.Cantidad</p>
+        <p>Total venta: @venta.TotalVenta</p>
+        <p>Fecha de la venta: @venta.Fecha_Venta</p>
+    </div>
+}
